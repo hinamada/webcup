@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to My CodeIgniter</title>
+	<title>Welcome to My CodeIgniter ZAMA</title>
 
 	<style type="text/css">
 
