@@ -16,6 +16,7 @@ class Malade_model extends CI_Model
             'pays'=>$this->input->post('pays'),
             'symptomes'=>$this->input->post('symptomes')
         );
-        $this->db->insert_string('malades',$array) ;
+        $query = $this->db->insert_string('malades',$array) ;
+        $this->db->query($query) ; 
     }
 }
