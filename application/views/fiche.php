@@ -42,12 +42,12 @@
 
           <div>
             <span class="days"></span>
-            <div class="smalltext">Days</div>
+            <div class="smalltext">Jours</div>
           </div>
 
           <div>
             <span class="hours"></span>
-            <div class="smalltext">Hours</div>
+            <div class="smalltext">Heures</div>
           </div>
 
           <div>
@@ -57,7 +57,7 @@
 
           <div>
             <span class="seconds"></span>
-            <div class="smalltext">Seconds</div>
+            <div class="smalltext">Secondes</div>
           </div>
 
         </div>
@@ -68,50 +68,17 @@
   </header>
   <!--Main Navigation-->
   <div class="container-fluid">
+    <div  class="text-center"><h1 class="titre">Titre</h1></div>
     <div class="row">
-      <div class="col-md-6">
-        <!-- Section: Blog v.4 -->
-        <section class="my-5 border-top-0 border-left-0 border-bottom-0">
-
-
-          <!-- Grid row -->
-          <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-12">
-
-              <!-- Card -->
-              <div class="card card-cascade wider reverse">
-
-                <!-- Card image -->
-                <div class="view view-cascade overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg"
-                    alt="Sample image">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body card-body-cascade text-center">
-
-
-                    <!-- Title -->
-                    <h1 class="font-weight-bold"><a tabindex="0">Title of the news</a></h1>
-                    <!-- Data -->
-
-                    <p tabindex="0">Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
-
-
-                </div>
-                <!-- Card content -->
-
-              </div>
-              <!-- Card -->
-
-                <div class="mt-5" >
-
-                <p tabindex="0">At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
+      <div class="col-md-8">
+        <section class="text-center">
+            <video class="video-fluid z-depth-1" controls>
+              <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+            </video>
+          </section>
+      </div>
+      <div class="col-md-4">
+      <p tabindex="0">At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
                     corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
                     sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
                     est laborum et dolorum fuga quidem rerum facilis est distinctio.
@@ -121,29 +88,10 @@
                     eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
                     autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
                     repudiandae sint et molestiae non recusandae itaque earum rerum.</p>
-
-
-              </div>
-
-            </div>
-            <!-- Grid column -->
-
-          </div>
-          <!-- Grid row -->
-
-
-
-        </section>
-        <!-- Section: Blog v.4 -->
       </div>
-      <div class="col-md-6">
-        <section class="my-5">
-          <video class="video-fluid z-depth-1" controls>
-            <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
-          </video>
-        </section>
-      </div>
+      
     </div>
+    
     
   </div>
 </div>
@@ -250,7 +198,10 @@ $(document).keydown(
 
 <script>
   Mousetrap.bind('backspace', function(e) {
-window.location.replace("http://localhost/HINA/webcup/");
+window.location.replace("https://hinawebcup.herokuapp.com/index.php/Liste?IdCateg=2");
+});
+Mousetrap.bind('escape', function(e) {
+window.location.replace("https://hinawebcup.herokuapp.com/");
 });
   </script>
 </body>
