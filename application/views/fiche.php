@@ -59,11 +59,11 @@
 
 </header>
 <!--Main Navigation-->
-  <div class="container-fluid">
+  <div class="container-fluid mt-5">
     <div class="row">
         <div class="col-md-6">
             <!-- Section: Blog v.4 -->
-            <section class="my-5">
+            <section class="my-5 border p-3 border-top-0 border-left-0 border-bottom-0">
 
             <!-- Grid row -->
             <div class="row">
@@ -86,7 +86,7 @@
                 <div class="card-body card-body-cascade text-center">
 
                     <!-- Title -->
-                    <h2 class="font-weight-bold"><a>Title of the news</a></h2>
+                    <h1 class="font-weight-bold"><a>Title of the news</a></h1>
                     <!-- Data -->
                     <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
 
@@ -97,7 +97,7 @@
                 <!-- Card -->
 
                 <!-- Excerpt -->
-                <div class="mt-5">
+                <div class="mt-5" tabindex="0">
 
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
                     corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
@@ -123,16 +123,61 @@
             <!-- Section: Blog v.4 -->
         </div>
         <div class="col-md-6">
+            
             <section class="my-5">
+                <div class="row">
+                    <div class="col-md-6" ><div class="text-center"><a tabindex="0" href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
+                    <div class="col-md-6" ><div class="text-center"><a tabindex="0" href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
+                </div>
+                <hr class="m-4">
+                <h2>Documents relatifs</h2>
                 <video class="video-fluid z-depth-1" controls>
                     <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
                 </video>
             </section>
         </div>
     </div>
+    
   </div>
   <!-- /Start your project here-->
-
+  <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
+  <script>
+function myFunction(){
+ responsiveVoice.setDefaultVoice("French Female");
+}
+</script>
+<script>
+$(document).keydown(
+    function(e)
+    {    
+        if (e.keyCode == 39) {      
+          if($('a').is(':focus')){
+            $("a:focus").next().focus();
+            responsiveVoice.cancel();
+            responsiveVoice.speak($(':focus').text());
+          }
+          else{
+            $("a:first-child").focus();
+            responsiveVoice.cancel();
+            responsiveVoice.speak($(':focus').text());
+          }
+           
+        }
+        else if (e.keyCode == 37) {      
+          if($('a').is(':focus')){
+            $("a:focus").prev().focus();
+            responsiveVoice.cancel();
+            responsiveVoice.speak($(':focus').text());
+          }
+          else{
+            $("a:first-child").focus();
+            responsiveVoice.cancel();
+            responsiveVoice.speak($(':focus').text());
+          }
+        }
+    }
+);
+</script>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
@@ -142,6 +187,7 @@
   <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
+  
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: ailerons;
-    src: url(/font/Ailerons-Typeface.otf);
+    src: url(/assets/font/Ailerons-Typeface.otf);
   }
 
   .imagelogo 
@@ -138,3 +138,4 @@ a {
     width: 100%;
     height: auto;
   }
+  .bord {border-style: none solid none none;}

@@ -63,7 +63,7 @@
     <div class="row justify-content-md-center">
     <a href="lol" >
       <div class="col text-center">
-        <img onmouseover="hover()" id="#img" tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
+        <img  id="#img" tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
         <div class="menu-title">
         <p>Évolution</p>
         </div>
@@ -71,7 +71,7 @@
       </a>
       <a href="#" id="Health">
       <div class="col text-center"> 
-        <img onmouseover="hover()" tabindex="0"  class="menuel" src="<?php echo url('/images/sante.png'); ?>">
+        <img  tabindex="0"  class="menuel" src="<?php echo url('/images/sante.png'); ?>">
         <div tabindex="0"  class="menu-title">
         <p>Santé</p>
         </div> 
@@ -149,7 +149,7 @@ $(document).keydown(
           else{
             $("a:first-child").focus();
             responsiveVoice.cancel();
-            responsiveVoice.speak($(':focus').text());r
+            responsiveVoice.speak($(':focus').text());
           }
            
         }
