@@ -132,25 +132,7 @@
           <!-- Grid row -->
 
 
-<<<<<<< HEAD
-            </section>
-            <!-- Section: Blog v.4 -->
-        </div>
-        <div class="col-md-6">
-            
-            <section class="my-5">
-                <div class="row">
-                    <div class="col-md-6" ><div class="text-center"><a  href="#" class="text-center" tabindex="0"><i class="fab fa-6x fa-accessible-icon" ></i></a></div></div>
-                    <div class="col-md-6" ><div class="text-center"><a  href="#" class="text-center" tabindex="0">Mima</a></div></div>
-                </div>
-                <hr class="m-4">
-                <h2 id="docRelatif">Documents relatifs</h2>
-                <video class="video-fluid z-depth-1" controls>
-                    <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
-                </video>
-            </section>
-        </div>
-=======
+
         </section>
         <!-- Section: Blog v.4 -->
       </div>
@@ -161,8 +143,6 @@
           </video>
         </section>
       </div>
-
->>>>>>> 64349ea9e633b992b003a86d1564a819ff83e324
     </div>
     
   </div>
