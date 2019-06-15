@@ -26,4 +26,17 @@ class Informations extends CI_Controller {
     public function statistique() {
         $this->load->view('statistiques') ;
     }
+
+    public function declarerMalade(){
+        $this->form_validation->set_rules('nomMalade', 'nomMalade', 'required');
+        if ($this->form_validation->run() == FALSE)
+        {
+            $this->load->view('declarerMalade') ;
+        }
+        else
+        {
+            $this->load->view('formsuccess');
+        }
+
+    }
 }
