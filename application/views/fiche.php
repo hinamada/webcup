@@ -86,9 +86,9 @@
                 <div class="card-body card-body-cascade text-center">
 
                     <!-- Title -->
-                    <h1 class="font-weight-bold"><a>Title of the news</a></h1>
+                    <h1 class="font-weight-bold"><a tabindex="0">Title of the news</a></h1>
                     <!-- Data -->
-                    <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
+                    <p tabindex="0">Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
 
                 </div>
                 <!-- Card content -->
@@ -97,14 +97,14 @@
                 <!-- Card -->
 
                 <!-- Excerpt -->
-                <div class="mt-5" tabindex="0">
+                <div class="mt-5" >
 
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
+                <p tabindex="0">At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
                     corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
                     sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
                     est laborum et dolorum fuga quidem rerum facilis est distinctio.
                 </p>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                <p tabindex="0">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
                     maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Quis autem vel
                     eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
                     autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
@@ -126,11 +126,11 @@
             
             <section class="my-5">
                 <div class="row">
-                    <div class="col-md-6" ><div class="text-center"><a tabindex="0" href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
-                    <div class="col-md-6" ><div class="text-center"><a tabindex="0" href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
+                    <div class="col-md-6" ><div class="text-center"><a  href="#" class="text-center" tabindex="0"><i class="fab fa-6x fa-accessible-icon" ></i></a></div></div>
+                    <div class="col-md-6" ><div class="text-center"><a  href="#" class="text-center" tabindex="0">Mima</a></div></div>
                 </div>
                 <hr class="m-4">
-                <h2>Documents relatifs</h2>
+                <h2 id="docRelatif">Documents relatifs</h2>
                 <video class="video-fluid z-depth-1" controls>
                     <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
                 </video>
@@ -140,7 +140,18 @@
     
   </div>
   <!-- /Start your project here-->
+  
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="<?php echo url('js/popper.min.js'); ?>"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
   <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
+  <script src="<?php echo url('js/three.r92.min.js');?>"></script>
   <script>
 function myFunction(){
  responsiveVoice.setDefaultVoice("French Female");
@@ -150,7 +161,7 @@ function myFunction(){
 $(document).keydown(
     function(e)
     {    
-        if (e.keyCode == 39) {      
+      if (e.keyCode == 39) {      
           if($('a').is(':focus')){
             $("a:focus").next().focus();
             responsiveVoice.cancel();
@@ -175,19 +186,15 @@ $(document).keydown(
             responsiveVoice.speak($(':focus').text());
           }
         }
+        else{
+          responsiveVoice.cancel();
+          console.log($(':focus'));
+          responsiveVoice.speak("Mirado");
+        }
     }
+
 );
 </script>
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="<?php echo url('js/popper.min.js'); ?>"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
-  
 </body>
 
 </html>
