@@ -56,7 +56,7 @@
   </div>
   <div>
     <span class="minutes"></span>
-    <div class="smalltext">Minutes/div>
+    <div class="smalltext">Minutes</div>
   </div>
   <div>
     <span class="seconds"></span>
