@@ -149,7 +149,7 @@ $(document).keydown(
           else{
             $("a:first-child").focus();
             responsiveVoice.cancel();
-            responsiveVoice.speak($(':focus').text());r
+            responsiveVoice.speak($(':focus').text());
           }
            
         }

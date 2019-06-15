@@ -97,7 +97,7 @@
                 <!-- Card -->
 
                 <!-- Excerpt -->
-                <div class="mt-5">
+                <div class="mt-5" tabindex="0">
 
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
                     corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
@@ -126,8 +126,8 @@
             
             <section class="my-5">
                 <div class="row">
-                    <div class="col-md-6" ><div class="text-center"><a href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
-                    <div class="col-md-6" ><div class="text-center"><a href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
+                    <div class="col-md-6" ><div class="text-center"><a tabindex="0" href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
+                    <div class="col-md-6" ><div class="text-center"><a tabindex="0" href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
                 </div>
                 <hr class="m-4">
                 <h2>Documents relatifs</h2>
@@ -140,7 +140,44 @@
     
   </div>
   <!-- /Start your project here-->
-
+  <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
+  <script>
+function myFunction(){
+ responsiveVoice.setDefaultVoice("French Female");
+}
+</script>
+<script>
+$(document).keydown(
+    function(e)
+    {    
+        if (e.keyCode == 39) {      
+          if($('a').is(':focus')){
+            $("a:focus").next().focus();
+            responsiveVoice.cancel();
+            responsiveVoice.speak($(':focus').text());
+          }
+          else{
+            $("a:first-child").focus();
+            responsiveVoice.cancel();
+            responsiveVoice.speak($(':focus').text());
+          }
+           
+        }
+        else if (e.keyCode == 37) {      
+          if($('a').is(':focus')){
+            $("a:focus").prev().focus();
+            responsiveVoice.cancel();
+            responsiveVoice.speak($(':focus').text());
+          }
+          else{
+            $("a:first-child").focus();
+            responsiveVoice.cancel();
+            responsiveVoice.speak($(':focus').text());
+          }
+        }
+    }
+);
+</script>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
