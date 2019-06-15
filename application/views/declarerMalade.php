@@ -66,7 +66,7 @@
                 <div class="card-body">
                     <h1 class="card-title">Déclaration malade</h1>
                     <?php echo validation_errors(); ?>
-                    <?php echo form_open('Informations/declarerMalade') ?>
+                    <?php echo form_open('Info/declarerMalade') ?>
                         <!-- Default input -->
                         <div class="form-group">
                             <label for="exampleForm2">Nom du malade(*) : </label>
