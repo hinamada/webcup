@@ -31,13 +31,17 @@ class Info extends CI_Controller {
         $this->form_validation->set_rules('nomMalade', 'Nom du malade', 'required',array(
             'required'=>'Champs Nom malade obligatoire'
         ));
+        $this->form_validation->set_rules('nomTuteur','Nom de tuteur','required',array(
+            'required'=>'Champs Nom tuteur obligatoire'
+        )) ;
         if ($this->form_validation->run() == FALSE)
         {
             $this->load->view('declarerMalade') ;
         }
         else
         {
-            $this->load->view('formsuccess');
+            $this->malade->saveMalade() ;
+            redirect('/?message=Les autorités arriveront les plutôt possible');
         }
 
     }
