@@ -1,0 +1,134 @@
+@font-face {
+    font-family: ailerons;
+    src: url(/font/Ailerons-Typeface.otf);
+  }
+
+  .imagelogo 
+{
+    height: auto;
+    width: 20vw;
+}
+.logo
+{
+    margin-top: 5vh;
+}
+.menuel { transition: all .2s ease-in-out; }
+.menuel
+{
+    width: 10vw;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuel:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+@media (max-width: 800px)
+{
+    .imagelogo {
+        height: auto;
+        width: 50vw;
+    }
+    .logo{
+        margin-top: 1vh;
+    }
+    .menu{
+        margin-top: 5vh;
+    }
+}
+@media (max-width: 400px)
+{
+    .menuel
+    {
+        width: 30vw;
+    }
+    .menu-title{
+        font-size: 100%;
+    }
+
+
+}
+@media (max-width: 500px)
+{
+    .menuel
+    {
+        width: 30vw;
+    }
+    .row {
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+   
+}
+@media (min-width: 900px)
+{
+    .menu{
+        margin-top: 15vh;
+    }
+    .menu-title{
+        font-size: 200%;
+    }
+
+}
+@media (min-width: 1024px)
+{
+    .menu{
+        margin-top: 20vh;
+    }
+    .menu-title{
+        font-size: 200%;
+    }
+
+}
+.countdown{
+    margin-top: 5vh;
+}
+.menu-title{
+    font-family: ailerons;
+}
+
+a {
+    color: black;
+  }
+
+  h1{
+    color: rgb(21, 22, 24);
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+  }
+  
+  #clockdiv{
+      font-family: sans-serif;
+      color: #fff;
+      font-weight: 100;
+      text-align: center;
+      font-size: 30px;
+
+  }
+  
+  #clockdiv > div{
+      padding: 10px;
+      border-radius: 3px;
+      background: rgb(34, 36, 37);
+      display: inline-block;
+  }
+  
+  #clockdiv div > span{
+      padding: 15px;
+      border-radius: 3px;
+      background: rgb(106, 107, 107);
+      display: inline-block;
+
+  }
+  
+  .smalltext{
+      padding-top: 5px;
+      font-size: 16px;
+  }
