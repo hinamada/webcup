@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: ailerons;
-    src: url(/font/Ailerons-Typeface.otf);
+    src: url(/assets/font/Ailerons-Typeface.otf);
   }
 
   .imagelogo 
@@ -13,6 +13,8 @@
 {
     margin-top: 5vh;
 }
+
+
 .menuel { transition: all .2s ease-in-out; }
 .menuel
 {
@@ -94,6 +96,10 @@
     font-family: ailerons;
 }
 
+.menu{
+    margin-top: 20vh;
+}
+
 a {
     color: black;
   }
@@ -113,22 +119,43 @@ a {
       font-size: 30px;
 
   }
-  
-  #clockdiv > div{
-      padding: 10px;
-      border-radius: 3px;
-      background: rgb(34, 36, 37);
-      display: inline-block;
-  }
-  
-  #clockdiv div > span{
-      padding: 15px;
-      border-radius: 3px;
-      background: rgb(106, 107, 107);
-      display: inline-block;
+  #clockdiv2{
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    font-size: 15px;
+}
 
-  }
+#clockdiv2 > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: rgb(34, 36, 37);
+    display: inline-block;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: rgb(34, 36, 37);
+    display: inline-block;
+} 
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: rgb(106, 107, 107);
+  display: inline-block;
+}
   
+#clockdiv2 div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: rgb(106, 107, 107);
+    display: inline-block;
+
+}
+
+
   .smalltext{
       padding-top: 5px;
       font-size: 16px;
@@ -137,4 +164,8 @@ a {
 .video-fluid {
     width: 100%;
     height: auto;
+  }
+
+  .head2{
+        margin-left: 5vw;
   }
