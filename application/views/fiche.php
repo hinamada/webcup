@@ -59,11 +59,11 @@
 
 </header>
 <!--Main Navigation-->
-  <div class="container-fluid">
+  <div class="container-fluid mt-5">
     <div class="row">
         <div class="col-md-6">
             <!-- Section: Blog v.4 -->
-            <section class="my-5">
+            <section class="my-5 border p-3 border-top-0 border-left-0 border-bottom-0">
 
             <!-- Grid row -->
             <div class="row">
@@ -86,7 +86,7 @@
                 <div class="card-body card-body-cascade text-center">
 
                     <!-- Title -->
-                    <h2 class="font-weight-bold"><a>Title of the news</a></h2>
+                    <h1 class="font-weight-bold"><a>Title of the news</a></h1>
                     <!-- Data -->
                     <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
 
@@ -123,13 +123,21 @@
             <!-- Section: Blog v.4 -->
         </div>
         <div class="col-md-6">
+            
             <section class="my-5">
+                <div class="row">
+                    <div class="col-md-6" ><div class="text-center"><a href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
+                    <div class="col-md-6" ><div class="text-center"><a href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
+                </div>
+                <hr class="m-4">
+                <h2>Documents relatifs</h2>
                 <video class="video-fluid z-depth-1" controls>
                     <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
                 </video>
             </section>
         </div>
     </div>
+    
   </div>
   <!-- /Start your project here-->
 
@@ -142,6 +150,7 @@
   <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
+  
 </body>
 
 </html>
