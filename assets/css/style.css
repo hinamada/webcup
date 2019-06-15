@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: ailerons;
     src: url(/font/Ailerons-Typeface.otf);
@@ -131,4 +132,9 @@ a {
   .smalltext{
       padding-top: 5px;
       font-size: 16px;
+=======
+.video-fluid {
+    width: 100%;
+    height: auto;
+>>>>>>> f94f5ee3e77c8fd390d69e430a71cbd97ee3507c
   }

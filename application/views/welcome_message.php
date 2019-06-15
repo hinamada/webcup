@@ -32,6 +32,7 @@
 
   </header>
   <!-- Start your project here-->
+<<<<<<< HEAD
   <div class=" countdown justify-content-md-center">
 
   <h1 class="text-center">Jours avant l'invasion</h1>
@@ -97,6 +98,18 @@
       </div>
       </a>
     </div>
+=======
+  <div style="height: 100vh">
+    <ul>
+		<li><img src="<?php echo url('/images/12F8N.png'); ?>"></li>
+		<li><img src="<?php echo url('/images/12F8N.png'); ?>"></li>
+		<li><img src="<?php echo url('/images/12F8N.png'); ?>"></li>
+		<li><img src="<?php echo url('/images/12F8N.png'); ?>"></li>
+		<li><img src="<?php echo url('/images/12F8N.png'); ?>"></li>
+		<li><img src="<?php echo url('/images/12F8N.png'); ?>"></li>
+		
+	</ul>
+>>>>>>> f94f5ee3e77c8fd390d69e430a71cbd97ee3507c
   </div>
 </div>
  
