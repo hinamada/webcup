@@ -69,7 +69,7 @@
   <div id="test" style="height:100vh;">
   <div class="container menu  text-center">
     <div class="row justify-content-md-center">
-    <a href="lol" >
+    <a href="<?php echo site_url('Info/statistique')?>" >
       <div class="col text-center">
         <img  id="#img" tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
         <div class="menu-title">
