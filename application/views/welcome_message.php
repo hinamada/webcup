@@ -18,6 +18,14 @@
 </head>
 
 <body onload="myFunction()">
+  <?php if($message!="") { ?>
+  <div class="alert alert-dark alert-dismissible fade show" role="alert">
+      <?php echo $message ?>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+  <?php } ?>
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
     <div class="container">
@@ -60,7 +68,7 @@
   <div style="height:100vh;">
   <div class="container menu  text-center">
     <div class="row justify-content-md-center">
-    <a href="lol" >
+    <a href="<?php echo site_url('Info/statistique')?>" >
       <div class="col text-center">
         <img  id="#img" tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
         <div class="menu-title">
@@ -148,7 +156,7 @@ $(document).keydown(
           else{
             $("a:first-child").focus();
             responsiveVoice.cancel();
-            responsiveVoice.speak($(':focus').text());r
+            responsiveVoice.speak($(':focus').text());
           }
            
         }

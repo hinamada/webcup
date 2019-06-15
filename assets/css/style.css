@@ -169,3 +169,6 @@ a {
   .head2{
         margin-left: 5vw;
   }
+
+  .bord {border-style: none solid none none;}
+

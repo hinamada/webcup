@@ -61,12 +61,12 @@
 <!--Main Navigation-->
 <div class="container-fluid mt-5">
     <div class="row">
-        <div class="col-md-6 offset-3">
+        <div class="col-12  col-md-6 offset-md-3">
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">Déclaration malade</h1>
                     <?php echo validation_errors(); ?>
-                    <?php echo form_open('Informations/declarerMalade') ?>
+                    <?php echo form_open('Info/declarerMalade') ?>
                         <!-- Default input -->
                         <div class="form-group">
                             <label for="exampleForm2">Nom du malade(*) : </label>
@@ -77,28 +77,17 @@
                             <label for="exampleForm2">Tuteur(*): </label>
                             <input type="text" name="nomTuteur" id="exampleForm2" class="form-control">
                         </div>
-
-                        <div class="form-group">
-                            <label for="exampleForm2">Pays : </label>
-                            <select name="pays" class="browser-default custom-select">
-                                <option selected>Pays</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-
                         <!-- Default input -->
                         <div class="form-group">
                             <label for="exampleForm2">Symptômes : </label>
                             <select name="symptomes" class="browser-default custom-select">
-                                <option selected>Perte d'audition</option>
-                                <option value="1">Perte de la vue</option>
-                                <option value="2">Paralysie</option>
-                                <option value="3">Autres</option>
+                                <option value="Perte de la vue">Perte de la vue</option>
+                                <option value="Paralysie">Paralysie</option>
+                                <option value="Autres">Autres</option>
                             </select>
                         </div>
-
+                        <input type="hidden" name="lat" id="lat" />
+                        <input type="hidden" name="lng" id="lng" />
                         <button  type="submit" class="btn btn-elegant btn-block">Déclarer le malade</button>
 
                     </form>
@@ -118,6 +107,16 @@
 <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
+
+<script type="text/javascript">
+    function maPosition(position) {
+        $("#lat").val(position.coords.latitude);
+        $("#lng").val(position.coords.longitude);
+    }
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(maPosition);
+    }
+</script>
 </body>
 
 </html>
