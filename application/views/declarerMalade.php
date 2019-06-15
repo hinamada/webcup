@@ -79,12 +79,13 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleForm2">Pays : </label>
+                            <label for="exampleForm2">Continents : </label>
                             <select name="pays" class="browser-default custom-select">
-                                <option selected>Pays</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option selected value="Asie">Asie</option>
+                                <option value="Afrique">Afrique</option>
+                                <option value="Europe">Europe</option>
+                                <option value="Oceanie">Oceanie</option>
+                                <option value="Amerique">Amerique</option>
                             </select>
                         </div>
 
@@ -92,10 +93,9 @@
                         <div class="form-group">
                             <label for="exampleForm2">Symptômes : </label>
                             <select name="symptomes" class="browser-default custom-select">
-                                <option selected>Perte d'audition</option>
-                                <option value="1">Perte de la vue</option>
-                                <option value="2">Paralysie</option>
-                                <option value="3">Autres</option>
+                                <option value="Perte de la vue">Perte de la vue</option>
+                                <option value="Paralysie">Paralysie</option>
+                                <option value="Autres">Autres</option>
                             </select>
                         </div>
 
