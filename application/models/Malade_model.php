@@ -13,7 +13,6 @@ class Malade_model extends CI_Model
         $array = array(
             'nomMalade'=>$this->input->post('nomMalade'),
             'tuteur'=>$this->input->post('nomTuteur'),
-            'pays'=>$this->input->post('pays'),
             'symptomes'=>$this->input->post('symptomes'),
             'latitude'=>$this->input->post('lat'),
             'longitude'=>$this->input->post('lng')
