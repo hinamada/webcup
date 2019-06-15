@@ -109,11 +109,11 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
 
-<script src="http://code.highcharts.com/maps/highmaps.js"></script>
-<script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
-<script src="http://code.highcharts.com/maps/modules/drilldown.js"></script>
+<script src="<?php echo url('js/mapdata/highmaps.js'); ?>"></script>
+<script src="<?php echo url('js/mapdata/exporting.js'); ?>"></script>
+<script src="<?php echo url('js/mapdata/drilldown.js'); ?>"></script>
 <script src="<?php echo url('js/mapdata/world-continents.js'); ?>"></script>
-<script src="http://code.highcharts.com/mapdata/custom/europe.js"></script>
+<script src="<?php echo url('js/mapdata/europe.js'); ?>"></script>
 <script src="<?php echo url('js/mapdata/africa.js'); ?>"></script>
 
 

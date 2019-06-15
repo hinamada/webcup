@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Informations extends CI_Controller {
+class Info extends CI_Controller {
 
     /**
      * Index Page for this controller.
@@ -28,7 +28,9 @@ class Informations extends CI_Controller {
     }
 
     public function declarerMalade(){
-        $this->form_validation->set_rules('nomMalade', 'nomMalade', 'required');
+        $this->form_validation->set_rules('nomMalade', 'Nom du malade', 'required',array(
+            'required'=>'Champs Nom malade obligatoire'
+        ));
         if ($this->form_validation->run() == FALSE)
         {
             $this->load->view('declarerMalade') ;
