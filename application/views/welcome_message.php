@@ -119,10 +119,6 @@ VANTA.NET({
   spacing: 20.00
 })
 </script>
-
-<script>
-
-</script>
 <script>
 function myFunction(){
  responsiveVoice.setDefaultVoice("French Female");
@@ -160,7 +156,18 @@ $(document).keydown(
     }
 );
 </script>
-
+<script>
+	$(document).ready(function(){
+		setTimeout(
+  function() 
+  {
+    responsiveVoice.setDefaultVoice("French Female");
+		responsiveVoice.cancel();
+		responsiveVoice.speak("Bienvenue sur le site Wemanity. Je suis Hina, l'amie qui va vous aider dans votre navigation. Trouvez les derbières nouvelles de notre monde sur Wemanity quelle que soit vos difficultés.Pour explorer les différentes sections de la page.Utilisez les touches de directions sur votre clavier. Bonne navigation.");
+  }, 5000);
+		
+	});
+</script>
 
 </body>
 

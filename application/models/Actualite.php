@@ -10,5 +10,8 @@ class Actualite extends CI_Model
 		$query=$this->db->query('select * from actualite a join imageActus ia on ia.idActualite=a.id where 1=1 '.$req);
 		return $query->result_array();
 	}
-
+	public function findOne($req){
+		$query=$this->db->query('select * from actualite where 1=1 '.$req);
+		return $query->result();
+	}
 }
