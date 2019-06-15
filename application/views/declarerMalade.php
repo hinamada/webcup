@@ -110,11 +110,8 @@
 
 <script type="text/javascript">
     function maPosition(position) {
-        var infopos = "Position déterminée :\n";
-        infopos += "Latitude : "+position.coords.latitude +"\n";
-        infopos += "Longitude: "+position.coords.longitude+"\n";
-        infopos += "Altitude : "+position.coords.altitude +"\n";
-        document.getElementById("infoposition").innerHTML = infopos;
+        $("#lat").val(position.coords.latitude);
+        $("#lng").val(position.coords.longitude);
     }
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(maPosition);
