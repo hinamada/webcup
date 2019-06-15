@@ -14,49 +14,67 @@
   <link href="<?php echo url('css/mdb.min.css'); ?>" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="<?php echo url('css/style.css'); ?>" rel="stylesheet">
+
+  <link rel="stylesheet" href="<?php echo url('css/animsition.min.css');?>">
+<!-- jQuery -->
+
 </head>
 
-<body>
-
+<body  >
+<div class="animsition"
+  data-animsition-in-class="fade-in"
+  data-animsition-in-duration="3000"
+  data-animsition-out-class="fade-out"
+  data-animsition-out-duration="800">
   <!-- Start your project here-->
   <!--Main Navigation-->
-<header>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-  <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Opinions</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav nav-flex-icons">
-      <li class="nav-item">
-        <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"><i class="fab fa-twitter"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"><i class="fab fa-instagram"></i></a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<<<<<<< HEAD
+  <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
+    <div class="head2">
+
+      <div class=" text-center logo">
+        <img class="imagelogo" src="<?php echo url('/images/logo.png'); ?>">
+      </div>
+      <div class="toggle-button d-inline-block d-lg-none">
+        <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
+      </div>
+      <div id="clockdiv2">
+
+          <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+          </div>
+
+          <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+
+          <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+
+          <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
+
+        </div>
+
+    </div>
+
+
+  </header>
+  <!--Main Navigation-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Section: Blog v.4 -->
+        <section class="my-5">
+=======
 </header>
 <!--Main Navigation-->
   <div class="container-fluid mt-5">
@@ -64,81 +82,90 @@
         <div class="col-md-6">
             <!-- Section: Blog v.4 -->
             <section class="my-5 border p-3 border-top-0 border-left-0 border-bottom-0">
+>>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
 
-            <!-- Grid row -->
-            <div class="row">
+          <!-- Grid row -->
+          <div class="row">
 
             <!-- Grid column -->
             <div class="col-md-12">
 
-                <!-- Card -->
-                <div class="card card-cascade wider reverse">
+              <!-- Card -->
+              <div class="card card-cascade wider reverse">
 
                 <!-- Card image -->
                 <div class="view view-cascade overlay">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" alt="Sample image">
-                    <a href="#!">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg"
+                    alt="Sample image">
+                  <a href="#!">
                     <div class="mask rgba-white-slight"></div>
-                    </a>
+                  </a>
                 </div>
 
                 <!-- Card content -->
                 <div class="card-body card-body-cascade text-center">
 
+<<<<<<< HEAD
+                  <!-- Title -->
+                  <h2 class="font-weight-bold"><a>Title of the news</a></h2>
+                  <!-- Data -->
+                  <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
+=======
                     <!-- Title -->
                     <h1 class="font-weight-bold"><a>Title of the news</a></h1>
                     <!-- Data -->
                     <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
+>>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
 
                 </div>
                 <!-- Card content -->
 
-                </div>
-                <!-- Card -->
+              </div>
+              <!-- Card -->
 
+<<<<<<< HEAD
+              <!-- Excerpt -->
+              <div class="mt-5">
+=======
                 <!-- Excerpt -->
                 <div class="mt-5" tabindex="0">
+>>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
 
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-                    sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
-                    est laborum et dolorum fuga quidem rerum facilis est distinctio.
+                  corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+                  sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
+                  est laborum et dolorum fuga quidem rerum facilis est distinctio.
                 </p>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-                    maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Quis autem vel
-                    eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
-                    autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
-                    repudiandae sint et molestiae non recusandae itaque earum rerum.</p>
+                  maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Quis autem vel
+                  eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
+                  autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                  repudiandae sint et molestiae non recusandae itaque earum rerum.</p>
 
-                </div>
+              </div>
 
             </div>
             <!-- Grid column -->
 
-            </div>
-            <!-- Grid row -->
+          </div>
+          <!-- Grid row -->
 
 
-            </section>
-            <!-- Section: Blog v.4 -->
-        </div>
-        <div class="col-md-6">
-            
-            <section class="my-5">
-                <div class="row">
-                    <div class="col-md-6" ><div class="text-center"><a tabindex="0" href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
-                    <div class="col-md-6" ><div class="text-center"><a tabindex="0" href="#" class="text-center"><i class="fab fa-6x fa-accessible-icon"></i></a></div></div>
-                </div>
-                <hr class="m-4">
-                <h2>Documents relatifs</h2>
-                <video class="video-fluid z-depth-1" controls>
-                    <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
-                </video>
-            </section>
-        </div>
+        </section>
+        <!-- Section: Blog v.4 -->
+      </div>
+      <div class="col-md-6">
+        <section class="my-5">
+          <video class="video-fluid z-depth-1" controls>
+            <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+          </video>
+        </section>
+      </div>
+
     </div>
     
   </div>
+</div>
   <!-- /Start your project here-->
   <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
   <script>
@@ -179,15 +206,58 @@ $(document).keydown(
 );
 </script>
   <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
+   <!-- JQuery -->
+   <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
+  <script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="<?php echo url('js/popper.min.js'); ?>"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
+<<<<<<< HEAD
+  <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+  <script type="text/javascript" src="<?php echo url('js/transition.js'); ?>"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="<?php echo url('js/animsition.min.js');?>"></script>
+<script>
+
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    //loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+
+<script>
+  Mousetrap.bind('backspace', function(e) {
+window.location.replace("http://localhost/HINA/webcup/");
+});
+  </script>
+=======
   
+>>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
 </body>
 
 </html>

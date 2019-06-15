@@ -62,11 +62,10 @@
     <span class="seconds"></span>
     <div class="smalltext">Seconds</div>
   </div>
-</div>
+  </div>
 </div>
 
-
-  <div id="test" style="height:100vh;">
+  <div style="height:100vh;">
   <div class="container menu  text-center">
     <div class="row justify-content-md-center">
 
