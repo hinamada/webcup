@@ -61,7 +61,7 @@
 <!--Main Navigation-->
 <div class="container-fluid mt-5">
     <div class="row">
-        <div class="col-md-6 offset-3">
+        <div class="col-12  col-md-6 offset-md-3">
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title">Déclaration malade</h1>
@@ -77,18 +77,6 @@
                             <label for="exampleForm2">Tuteur(*): </label>
                             <input type="text" name="nomTuteur" id="exampleForm2" class="form-control">
                         </div>
-
-                        <div class="form-group">
-                            <label for="exampleForm2">Continents : </label>
-                            <select name="pays" class="browser-default custom-select">
-                                <option selected value="Asie">Asie</option>
-                                <option value="Afrique">Afrique</option>
-                                <option value="Europe">Europe</option>
-                                <option value="Oceanie">Oceanie</option>
-                                <option value="Amerique">Amerique</option>
-                            </select>
-                        </div>
-
                         <!-- Default input -->
                         <div class="form-group">
                             <label for="exampleForm2">Symptômes : </label>
@@ -98,7 +86,8 @@
                                 <option value="Autres">Autres</option>
                             </select>
                         </div>
-
+                        <input type="hidden" name="lat" id="lat" />
+                        <input type="hidden" name="lng" id="lng" />
                         <button  type="submit" class="btn btn-elegant btn-block">Déclarer le malade</button>
 
                     </form>
@@ -118,6 +107,19 @@
 <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
+
+<script type="text/javascript">
+    function maPosition(position) {
+        var infopos = "Position déterminée :\n";
+        infopos += "Latitude : "+position.coords.latitude +"\n";
+        infopos += "Longitude: "+position.coords.longitude+"\n";
+        infopos += "Altitude : "+position.coords.altitude +"\n";
+        document.getElementById("infoposition").innerHTML = infopos;
+    }
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(maPosition);
+    }
+</script>
 </body>
 
 </html>
