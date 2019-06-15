@@ -28,7 +28,9 @@ class Info extends CI_Controller {
     }
 
     public function declarerMalade(){
-        $this->form_validation->set_rules('nomMalade', 'Nom du malade', 'required');
+        $this->form_validation->set_rules('nomMalade', 'Nom du malade', 'required',array(
+            'required'=>'Champs Nom malade obligatoire'
+        ));
         if ($this->form_validation->run() == FALSE)
         {
             $this->load->view('declarerMalade') ;
