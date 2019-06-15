@@ -27,7 +27,7 @@ class Info extends CI_Controller {
         $this->load->view('statistiques') ;
     }
 
-    /*public function declarerMalade(){
+    public function declarerMalade(){
         $this->form_validation->set_rules('nomMalade', 'nomMalade', 'required');
         if ($this->form_validation->run() == FALSE)
         {
@@ -38,5 +38,5 @@ class Info extends CI_Controller {
             $this->load->view('formsuccess');
         }
 
-    }*/
+    }
 }
