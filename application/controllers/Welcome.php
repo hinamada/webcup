@@ -28,6 +28,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->model('categorie');
 		$data['categorie']=$this->categorie->find();
+		/*$message = $this->input->get("message","") ;
+		$this->load->view('welcome_message',array("message"=>$message));*/
+		$data['message'] = $this->input->get("message","") ;		
 		$this->load->view('welcome_message',$data);
 	}
 }
