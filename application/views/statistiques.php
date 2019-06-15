@@ -14,6 +14,12 @@
     <link href="<?php echo url('css/mdb.min.css'); ?>" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="<?php echo url('css/style.css'); ?>" rel="stylesheet">
+
+
+
+
+
+
 </head>
 
 <body>
@@ -59,76 +65,36 @@
 
 </header>
 <!--Main Navigation-->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <!-- Section: Blog v.4 -->
-            <section class="my-5">
-
-                <!-- Grid row -->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-12">
-
-                        <!-- Card -->
-                        <div class="card card-cascade wider reverse">
-
-                            <!-- Card image -->
-                            <div class="view view-cascade overlay">
-                                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" alt="Sample image">
-                                <a href="#!">
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-
-                            <!-- Card content -->
-                            <div class="card-body card-body-cascade text-center">
-
-                                <!-- Title -->
-                                <h2 class="font-weight-bold"><a>Title of the news</a></h2>
-                                <!-- Data -->
-                                <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
-
-                            </div>
-                            <!-- Card content -->
-
-                        </div>
-                        <!-- Card -->
-
-                        <!-- Excerpt -->
-                        <div class="mt-5">
-
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
-                                corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-                                sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
-                                est laborum et dolorum fuga quidem rerum facilis est distinctio.
-                            </p>
-                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-                                maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Quis autem vel
-                                eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
-                                autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
-                                repudiandae sint et molestiae non recusandae itaque earum rerum.</p>
-
-                        </div>
-
-                    </div>
-                    <!-- Grid column -->
-
+<div class="container-fluid mt-5">
+    <div class="row ">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Répartition par age des malades</h5>
+                    <canvas id="myChart" style="max-width: 500px;"></canvas>
                 </div>
-                <!-- Grid row -->
-
-
-            </section>
-            <!-- Section: Blog v.4 -->
+            </div>
         </div>
-        <div class="col-md-6">
-            <section class="my-5">
-                <video class="video-fluid z-depth-1" controls>
-                    <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
-                </video>
-            </section>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Détails malades</h5>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <h4>5 800</h4>
+                            <h5><span class="label red badge">Nouveaux cas <i class="fas fa-arrow-circle-up"></i></span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>5%</h4>
+                            <h5><span class="label red badge">Pris en charge <i class="fas fa-arrow-circle-up"></i></span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="row">
+        <div id="map" style="width:100%; height:400px;"></div>
     </div>
 </div>
 <!-- /Start your project here-->
@@ -142,6 +108,150 @@
 <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
+
+<script src="http://code.highcharts.com/maps/highmaps.js"></script>
+<script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/maps/modules/drilldown.js"></script>
+<script src="<?php echo url('js/mapdata/africa.js'); ?>"></script>
+<script src="http://code.highcharts.com/mapdata/custom/europe.js"></script>
+<script src="<?php echo url('js/mapdata/africa.js'); ?>"></script>
+
+
+
+<script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+
+    $(function () {
+        $('.min-chart#chart-sales').easyPieChart({
+            barColor: "#4caf50",
+            onStep: function (from, to, percent) {
+                $(this.el).find('.percent').text(Math.round(percent));
+            }
+        });
+
+        $('.min-chart#chart-sales2').easyPieChart({
+            barColor: "#e60028",
+            onStep: function (from, to, percent) {
+                $(this.el).find('.percent').text(Math.round(percent));
+            }
+        });
+
+
+
+
+
+    })
+
+    $(function () {
+
+        // Initiate the chart
+        $('#map').highcharts('Map', {
+            title: {
+                text: 'Nombre des invalides par continent'
+            },
+
+            chart: {
+                events: {
+                    drilldown: function (e) {
+                        if (!e.seriesOptions) {
+                            var chart = this,
+                                pointWithLatLon = function (point, latLon) {
+                                    return Highcharts.merge(point, chart.transformFromLatLon(latLon,
+                                        Highcharts.maps['custom/africa']['hc-transform']['default']));
+                                };
+
+                            chart.addSeriesAsDrilldown(e.point, {
+                                mapData: Highcharts.maps['custom/africa'],
+                                joinBy: 'hc-key',
+                                data: [
+                                    {'hc-key': 'gr', value: 4},
+                                    {'hc-key': 'dk', value: 2},
+                                    {'hc-key': 'gb', value: 2},
+                                    {'hc-key': 'fr', value: 2},
+                                    {'hc-key': 'ru', value: 5}
+                                ]
+                            });
+
+                            chart.addSeries({
+                                id: 'cities',
+                                name: 'Cities',
+                                type: 'mappoint',
+                                color: 'black',
+                                marker: {
+                                    symbol: 'circle'
+                                },
+                                data: [
+                                    pointWithLatLon({ name: 'Paris' }, { lat: 48.8567, lon: 2.3508}),
+                                    pointWithLatLon({ name: 'Bucharest' }, { lat: 44.4325, lon: 26.103889}),
+                                    pointWithLatLon({ name: 'Riga' }, { lat: 56.948889, lon: 24.106389})
+                                ]
+                            });
+                        }
+                    },
+                    drillup: function (e) {
+                        this.get('cities').remove();
+                    }
+                }
+            },
+
+            colorAxis: {
+                min: 0
+            },
+
+            series : [{
+                data : [{
+                    'hc-key': 'af',
+                    drilldown: true,
+                    value: 1
+                }],
+                mapData: Highcharts.maps['custom/world-continents'],
+                joinBy: 'hc-key',
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }]
+        });
+    });
+
+
+</script>
 </body>
 
 </html>
