@@ -28,8 +28,6 @@
   data-animsition-out-duration="800">
   <!-- Start your project here-->
   <!--Main Navigation-->
-
-<<<<<<< HEAD
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
     <div class="head2">
@@ -73,16 +71,8 @@
     <div class="row">
       <div class="col-md-6">
         <!-- Section: Blog v.4 -->
-        <section class="my-5">
-=======
-</header>
-<!--Main Navigation-->
-  <div class="container-fluid mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <!-- Section: Blog v.4 -->
-            <section class="my-5 border p-3 border-top-0 border-left-0 border-bottom-0">
->>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
+        <section class="my-5 border-top-0 border-left-0 border-bottom-0">
+
 
           <!-- Grid row -->
           <div class="row">
@@ -105,17 +95,13 @@
                 <!-- Card content -->
                 <div class="card-body card-body-cascade text-center">
 
-<<<<<<< HEAD
-                  <!-- Title -->
-                  <h2 class="font-weight-bold"><a>Title of the news</a></h2>
-                  <!-- Data -->
-                  <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
-=======
+
                     <!-- Title -->
-                    <h1 class="font-weight-bold"><a>Title of the news</a></h1>
+                    <h1 class="font-weight-bold"><a tabindex="0">Title of the news</a></h1>
                     <!-- Data -->
-                    <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
->>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
+
+                    <p tabindex="0">Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
+
 
                 </div>
                 <!-- Card content -->
@@ -123,24 +109,19 @@
               </div>
               <!-- Card -->
 
-<<<<<<< HEAD
-              <!-- Excerpt -->
-              <div class="mt-5">
-=======
-                <!-- Excerpt -->
-                <div class="mt-5" tabindex="0">
->>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
+                <div class="mt-5" >
 
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
-                  corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-                  sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
-                  est laborum et dolorum fuga quidem rerum facilis est distinctio.
+                <p tabindex="0">At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+                    sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
+                    est laborum et dolorum fuga quidem rerum facilis est distinctio.
                 </p>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-                  maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Quis autem vel
-                  eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
-                  autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
-                  repudiandae sint et molestiae non recusandae itaque earum rerum.</p>
+                <p tabindex="0">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                    maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Quis autem vel
+                    eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
+                    autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                    repudiandae sint et molestiae non recusandae itaque earum rerum.</p>
+
 
               </div>
 
@@ -149,6 +130,7 @@
 
           </div>
           <!-- Grid row -->
+
 
 
         </section>
@@ -161,13 +143,23 @@
           </video>
         </section>
       </div>
-
     </div>
     
   </div>
 </div>
   <!-- /Start your project here-->
+  
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="<?php echo url('js/popper.min.js'); ?>"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
   <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
+  <script src="<?php echo url('js/three.r92.min.js');?>"></script>
   <script>
 function myFunction(){
  responsiveVoice.setDefaultVoice("French Female");
@@ -177,7 +169,7 @@ function myFunction(){
 $(document).keydown(
     function(e)
     {    
-        if (e.keyCode == 39) {      
+      if (e.keyCode == 39) {      
           if($('a').is(':focus')){
             $("a:focus").next().focus();
             responsiveVoice.cancel();
@@ -202,9 +194,16 @@ $(document).keydown(
             responsiveVoice.speak($(':focus').text());
           }
         }
+        else{
+          responsiveVoice.cancel();
+          console.log($(':focus'));
+          responsiveVoice.speak("Mirado");
+        }
     }
+
 );
 </script>
+
   <!-- SCRIPTS -->
    <!-- JQuery -->
    <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
@@ -215,7 +214,6 @@ $(document).keydown(
   <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
-<<<<<<< HEAD
   <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
   <script type="text/javascript" src="<?php echo url('js/transition.js'); ?>"></script>
 
@@ -255,9 +253,6 @@ $(document).keydown(
 window.location.replace("http://localhost/HINA/webcup/");
 });
   </script>
-=======
-  
->>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
 </body>
 
 </html>
