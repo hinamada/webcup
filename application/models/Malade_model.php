@@ -14,9 +14,12 @@ class Malade_model extends CI_Model
             'nomMalade'=>$this->input->post('nomMalade'),
             'tuteur'=>$this->input->post('nomTuteur'),
             'pays'=>$this->input->post('pays'),
-            'symptomes'=>$this->input->post('symptomes')
+            'symptomes'=>$this->input->post('symptomes'),
+            'latitude'=>$this->input->post('lat'),
+            'longitude'=>$this->input->post('lng')
         );
-        $query = $this->db->insert_string('malades',$array) ;
-        $this->db->query($query) ;
+        //$query = $this->db->insert_string('malades',$array) ;
+        //$this->db->query($query) ;
+        $this->db->insert('malades',$array) ;
     }
 }
