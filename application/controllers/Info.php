@@ -41,7 +41,7 @@ class Info extends CI_Controller {
         else
         {
             $this->malade->saveMalade() ;
-            $this->load->view('formsuccess');
+            redirect('/');
         }
 
     }
