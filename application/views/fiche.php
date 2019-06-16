@@ -121,12 +121,13 @@
   <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
   <script src="<?php echo url('js/three.r92.min.js');?>"></script>
   <script>
+  
 function myFunction(){
  responsiveVoice.setDefaultVoice("French Female");
  
 }
 </script>
-
+  <script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
 <script>
 $(document).keydown(
     
