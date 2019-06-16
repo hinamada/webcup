@@ -83,7 +83,7 @@
       <div class="col-md-8">
         <section class="text-center">
             
-			<video class="video-fluid z-depth-1" controls>
+			<video id="video" class="video-fluid z-depth-1" controls>
               
 			  <source src="<?php echo $actualite->urlVideo; ?>" type="video/mp4" />
             </video>
@@ -133,6 +133,9 @@ $(document).keydown(
       if (e.keyCode == 82) {      
         responsiveVoice.cancel();
         responsiveVoice.speak($('#titre').text()+'. '+$('#contenu').text()+' '+ text);
+      }
+      if (e.keyCode == 80) {      
+        $('#video').get(0).play();
       }
     }
 
