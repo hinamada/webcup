@@ -18,8 +18,22 @@ class Details extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	
+    public function index()
 	{
-		$this->load->view('fiche');
-	}
+		return $this->voir();
+		
+    }
+    public function voir($id = 1){
+        $this->load->model('actualite');
+        $suite=" and id='".$id."'";
+        
+        $data['actu']=$this->actualite->findOne($suite);
+        if(!count($data['actu'])>0){
+            redirect('/');
+            return;
+        }
+        $data['actualite']= $data['actu'][0];
+		$this->load->view('fiche',$data);
+    }
 }

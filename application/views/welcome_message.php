@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Wemanity | Accueil</title>
+  <title>Material Design Bootstrap</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -69,7 +69,8 @@
   <div class="container menu  text-center">
     <div class="row justify-content-md-center">
 
-		<a href="#" >
+
+		<a href="<?php echo site_url('Info/statistique') ?>" >
 		  <div class="col text-center">
 			<img  tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
 			<div class="menu-title">
@@ -88,7 +89,6 @@
 		  </div>
 		</a>
 		<?php }} ?>
-
     </div>
 
   </div>
@@ -118,10 +118,6 @@ VANTA.NET({
   maxDistance: 35.00,
   spacing: 20.00
 })
-</script>
-
-<script>
-
 </script>
 <script>
 function myFunction(){
@@ -160,7 +156,18 @@ $(document).keydown(
     }
 );
 </script>
-
+<script>
+	$(document).ready(function(){
+		setTimeout(
+		function() 
+		{
+			responsiveVoice.setDefaultVoice("French Female");
+				responsiveVoice.cancel();
+				responsiveVoice.speak("Bienvenue sur le site Wemanity. Je suis Hina, l'amie qui va vous aider dans votre navigation. Trouvez les dernières nouvelles de notre monde sur Wemanity quelle que soit vos difficultés.Pour explorer les différentes sections de la page.Utilisez les touches de directions sur votre clavier. Bonne navigation.");
+		}, 1000);
+		
+	});
+</script>
 
 </body>
 

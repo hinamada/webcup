@@ -14,7 +14,9 @@
     margin-top: 5vh;
 }
 
-
+.graphs{
+    margin-top: 10vh;
+}
 .menuel { transition: all .2s ease-in-out; }
 .menuel
 {
@@ -167,8 +169,12 @@ a {
   }
 
   .head2{
-        margin-left: 5vw;
+        margin-left: 5vws;
   }
 
   .bord {border-style: none solid none none;}
 
+.titre{
+    font-style: bold;
+    font-family: ailerons;
+}
