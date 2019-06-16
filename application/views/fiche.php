@@ -181,6 +181,7 @@ window.location.replace("<?php echo site_url(); ?>/Liste?IdCateg=2");
 Mousetrap.bind('escape', function(e) {
 window.location.replace("<?php echo site_url(); ?>");
 });
+
   </script>
 </body>
 

@@ -24,8 +24,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-//$config['base_url'] = 'https://hinawebcup.herokuapp.com';
-$config['base_url'] = 'http://localhost/webcup/';
+$config['base_url'] = 'https://hinawebcup.herokuapp.com';
+//$config['base_url'] = 'http://localhost/webcup/';
+
 
 
 /*

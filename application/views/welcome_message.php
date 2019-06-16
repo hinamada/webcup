@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Wemanity | Accueil</title>
+  <title>Material Design Bootstrap</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -48,11 +48,11 @@
 <div id="clockdiv">
   <div>
     <span class="days"></span>
-    <div class="smalltext">Jours</div>
+    <div class="smalltext">Days</div>
   </div>
   <div>
     <span class="hours"></span>
-    <div class="smalltext">Heures</div>
+    <div class="smalltext">Hours</div>
   </div>
   <div>
     <span class="minutes"></span>
@@ -60,7 +60,7 @@
   </div>
   <div>
     <span class="seconds"></span>
-    <div class="smalltext">Secondes</div>
+    <div class="smalltext">Seconds</div>
   </div>
   </div>
 </div>
@@ -68,8 +68,46 @@
   <div style="height:100vh;">
   <div class="container menu  text-center">
     <div class="row justify-content-md-center">
+<<<<<<< HEAD
+    <a href="<?php echo site_url('Info/statistique')?>" >
+      <div class="col text-center">
+        <img  id="#img" tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
+        <div class="menu-title">
+        <p>Évolution</p>
+        </div>
+      </div>
+      </a>
+      <a href="#" id="Health">
+      <div class="col text-center"> 
+        <img  tabindex="0"  class="menuel" src="<?php echo url('/images/sante.png'); ?>">
+        <div tabindex="0"  class="menu-title">
+        <p>Santé</p>
+        </div> 
+      </div>
+      </a>
+      <a href="#">
+      <div class="col text-center">
+ 
+        <img tabindex="0"  class="menuel" src="<?php echo url('/images/politic.png'); ?>">
+        <div class="menu-title">
+        <p>Politique</p>
+        </div>
+    
+      </div>
+      </a>
+      <a href="#">
+      <div class="col text-center">
+     
+        <img  tabindex="0"  class="menuel" src="<?php echo url('/images/science.png'); ?>">
+        <div class="menu-title">
+        <p>Science</p>
+        </div>
+   
+      </div>
+      </a>
+=======
 
-		<a href="#" >
+		<a href="<?php echo site_url('Info/statistique') ?>" >
 		  <div class="col text-center">
 			<img  tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
 			<div class="menu-title">
@@ -89,6 +127,7 @@
 		</a>
 		<?php }} ?>
 
+>>>>>>> 7b79c571f91e3f1dbaf78f9460f1c9903cedd7ef
     </div>
 
   </div>
