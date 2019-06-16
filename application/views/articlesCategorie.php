@@ -69,7 +69,7 @@
   <!-- /Start your project here-->	
   
 	<!-- Timeline -->
-	<div  class="text-center "><h1 class="titre">Titre ezre</h1></div>
+	<div  class="text-center "><h1 class="titre">Articles</h1></div>
 	<div class="row anim" >
 	  <div class="col-md-12">
 		<div class="timeline-main" >
@@ -119,7 +119,9 @@
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
+	<script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
+  <script src="<?php echo url('js/three.r92.min.js');?>"></script>
 	<script type="text/javascript" src="<?php echo url('js/myjs.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
@@ -152,6 +154,15 @@ $(".animsition").animsition({
 	overlayParentElement : 'body',
 	transition: function(url){ window.location.href = url; }
 });
+responsiveVoice.OnVoiceReady = function() {
+			setTimeout(
+		function() 
+		{
+			responsiveVoice.setDefaultVoice("French Female");
+				responsiveVoice.cancel();
+				responsiveVoice.speak("Vous êtes maintenant sur la page listant les articles de la Catégorie, faites défiler votre tabulation pour naviguer vers chaque article");
+		}, 0);
+		};
 });
 </script>
 <script src="<?php echo url('js/three.r92.min.js');?>"></script>
