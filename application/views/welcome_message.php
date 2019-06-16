@@ -68,6 +68,7 @@
   <div style="height:100vh;">
   <div class="container menu  text-center">
     <div class="row justify-content-md-center">
+<<<<<<< HEAD
     <a href="<?php echo site_url('Info/statistique')?>" >
       <div class="col text-center">
         <img  id="#img" tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
@@ -104,6 +105,29 @@
    
       </div>
       </a>
+=======
+
+		<a href="<?php echo site_url('Info/statistique') ?>" >
+		  <div class="col text-center">
+			<img  tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
+			<div class="menu-title">
+			<p>Évolution</p>
+			</div>
+		  </div>
+		</a>
+		<?php if(isset($categorie)){
+			for($i=0;$i<count($categorie);$i++){?>
+		<a href="<?php echo site_url('Liste?idCateg='.$categorie[$i]['id']) ?>" >
+		  <div class="col text-center">
+			<img  tabindex="0"  class="menuel" src="<?php echo url('/images/'.$categorie[$i]['urlImage']); ?>">
+			<div class="menu-title">
+			<p><?php echo $categorie[$i]['nom']; ?></p>
+			</div>
+		  </div>
+		</a>
+		<?php }} ?>
+
+>>>>>>> 7b79c571f91e3f1dbaf78f9460f1c9903cedd7ef
     </div>
 
   </div>
