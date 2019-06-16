@@ -29,7 +29,9 @@
   data-animsition-out-duration="800">
   <!-- Start your project here-->
 	<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-
+        <?php
+        require ('navbar.php')
+        ?>
 <div class="head2">
 
 	<div class=" text-center logo">
