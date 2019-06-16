@@ -21,10 +21,11 @@
                 <a class="nav-link" href="<?php echo site_url("Liste?idCateg=3")?>">Science</a>
             </li>
         </ul>
-        <ul class="navbar-nav nav-flex-icons">
+        <!--<ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url("Info/declarerMalade")?>">SOS</a>
+                <a  href="<?php echo site_url("Info/declarerMalade")?>">SOS</a>
             </li>
-        </ul>
+        </ul>-->
+		<a  href="<?php echo site_url("Info/declarerMalade")?>"><button type="button" class="btn btn-danger"><i class="fas fa-medkit"></i> SOS</button></a>
     </div>
 </nav>
