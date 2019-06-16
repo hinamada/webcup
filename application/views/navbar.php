@@ -25,6 +25,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo site_url("Info/declarerMalade")?>">SOS</a>
             </li>
+
         </ul>
+
     </div>
 </nav>
