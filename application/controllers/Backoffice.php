@@ -18,7 +18,7 @@ class Backoffice extends CI_Controller {
 	private function verify ($username,$password){
 	    if($username=="janedoe" && $password=="janedoe") {
             $this->session->set_userdata('user', 'user');
-            return true ; 
+            return true ;
         }else {
 	        return false ;
         }
@@ -37,13 +37,7 @@ class Backoffice extends CI_Controller {
         $this->form_validation->set_rules('password', 'password', 'required',array(
             "required"=>"Champs Mot de passe requis"
         ));
-        $message = $this->input->get("message","") ;
-        if($message!="") {
-            $this->load->view("backoffice/login",array(
-                "message"=>$message
-            )) ;
-            return  ;
-        }
+        
         if ($this->form_validation->run() == FALSE) {
             $this->load->view("backoffice/login") ;
             return ;
