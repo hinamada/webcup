@@ -12,7 +12,7 @@ class Categorie extends CI_Model
 	}
 	public function findOne($id){
 		$query=$this->db->query('select * from categorie where id = '.$id);
-		return $query->result_array();
+		return $query->result();
 	}
 
 }
