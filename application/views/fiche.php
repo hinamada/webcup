@@ -69,7 +69,7 @@
   <!--Main Navigation-->
   <div class="container-fluid">
     <div  class="text-center"><h1 class="titre">Titre</h1></div>
-    <div class="row">
+    <div class="row graphs">
       <div class="col-md-8">
         <section class="text-center">
             <video class="video-fluid z-depth-1" controls>
@@ -153,13 +153,8 @@ $(document).keydown(
 </script>
 
   <!-- SCRIPTS -->
-   <!-- JQuery -->
-   <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
+ 
   <script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="<?php echo url('js/popper.min.js'); ?>"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
