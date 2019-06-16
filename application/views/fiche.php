@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Wemanity | Fiche</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -28,8 +28,6 @@
   data-animsition-out-duration="800">
   <!-- Start your project here-->
   <!--Main Navigation-->
-
-<<<<<<< HEAD
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
     <div class="head2">
@@ -44,12 +42,12 @@
 
           <div>
             <span class="days"></span>
-            <div class="smalltext">Days</div>
+            <div class="smalltext">Jours</div>
           </div>
 
           <div>
             <span class="hours"></span>
-            <div class="smalltext">Hours</div>
+            <div class="smalltext">Heures</div>
           </div>
 
           <div>
@@ -59,7 +57,7 @@
 
           <div>
             <span class="seconds"></span>
-            <div class="smalltext">Seconds</div>
+            <div class="smalltext">Secondes</div>
           </div>
 
         </div>
@@ -70,104 +68,46 @@
   </header>
   <!--Main Navigation-->
   <div class="container-fluid">
+    <div  class="text-center"><h1 class="titre">Titre</h1></div>
     <div class="row">
-      <div class="col-md-6">
-        <!-- Section: Blog v.4 -->
-        <section class="my-5">
-=======
-</header>
-<!--Main Navigation-->
-  <div class="container-fluid mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <!-- Section: Blog v.4 -->
-            <section class="my-5 border p-3 border-top-0 border-left-0 border-bottom-0">
->>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
-
-          <!-- Grid row -->
-          <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-12">
-
-              <!-- Card -->
-              <div class="card card-cascade wider reverse">
-
-                <!-- Card image -->
-                <div class="view view-cascade overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg"
-                    alt="Sample image">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body card-body-cascade text-center">
-
-<<<<<<< HEAD
-                  <!-- Title -->
-                  <h2 class="font-weight-bold"><a>Title of the news</a></h2>
-                  <!-- Data -->
-                  <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
-=======
-                    <!-- Title -->
-                    <h1 class="font-weight-bold"><a>Title of the news</a></h1>
-                    <!-- Data -->
-                    <p>Written by <a><strong>Abby Madison</strong></a>, 26/08/2018</p>
->>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
-
-                </div>
-                <!-- Card content -->
-
-              </div>
-              <!-- Card -->
-
-<<<<<<< HEAD
-              <!-- Excerpt -->
-              <div class="mt-5">
-=======
-                <!-- Excerpt -->
-                <div class="mt-5" tabindex="0">
->>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
-
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
-                  corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-                  sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
-                  est laborum et dolorum fuga quidem rerum facilis est distinctio.
+      <div class="col-md-8">
+        <section class="text-center">
+            <video class="video-fluid z-depth-1" controls>
+              <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+            </video>
+          </section>
+      </div>
+      <div class="col-md-4">
+      <p tabindex="0">At vero eos et accusamus et iusto odio dignissimos ducimus qui praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+                    sunt in culpa nemo enim ipsam voluptatem quia voluptas sit qui officia deserunt mollitia animi, id
+                    est laborum et dolorum fuga quidem rerum facilis est distinctio.
                 </p>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-                  maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Quis autem vel
-                  eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
-                  autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
-                  repudiandae sint et molestiae non recusandae itaque earum rerum.</p>
-
-              </div>
-
-            </div>
-            <!-- Grid column -->
-
-          </div>
-          <!-- Grid row -->
-
-
-        </section>
-        <!-- Section: Blog v.4 -->
+                <p tabindex="0">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                    maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Quis autem vel
+                    eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Temporibus
+                    autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                    repudiandae sint et molestiae non recusandae itaque earum rerum.</p>
       </div>
-      <div class="col-md-6">
-        <section class="my-5">
-          <video class="video-fluid z-depth-1" controls>
-            <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
-          </video>
-        </section>
-      </div>
-
+      
     </div>
+    
     
   </div>
 </div>
   <!-- /Start your project here-->
+  
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="<?php echo url('js/popper.min.js'); ?>"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
   <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
+  <script src="<?php echo url('js/three.r92.min.js');?>"></script>
   <script>
 function myFunction(){
  responsiveVoice.setDefaultVoice("French Female");
@@ -177,7 +117,7 @@ function myFunction(){
 $(document).keydown(
     function(e)
     {    
-        if (e.keyCode == 39) {      
+      if (e.keyCode == 39) {      
           if($('a').is(':focus')){
             $("a:focus").next().focus();
             responsiveVoice.cancel();
@@ -202,9 +142,16 @@ $(document).keydown(
             responsiveVoice.speak($(':focus').text());
           }
         }
+        else{
+          responsiveVoice.cancel();
+          console.log($(':focus'));
+          responsiveVoice.speak("Mirado");
+        }
     }
+
 );
 </script>
+
   <!-- SCRIPTS -->
    <!-- JQuery -->
    <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
@@ -215,7 +162,6 @@ $(document).keydown(
   <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
-<<<<<<< HEAD
   <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
   <script type="text/javascript" src="<?php echo url('js/transition.js'); ?>"></script>
 
@@ -252,13 +198,13 @@ $(document).keydown(
 
 <script>
   Mousetrap.bind('backspace', function(e) {
-window.location.replace("http://localhost/HINA/webcup/");
+window.location.replace("https://hinawebcup.herokuapp.com/index.php/Liste?IdCateg=2");
+});
+Mousetrap.bind('escape', function(e) {
+window.location.replace("https://hinawebcup.herokuapp.com/");
 });
 
   </script>
-=======
-  
->>>>>>> 4f5aca982d7154e4b54b2049cbff4bae90fde391
 </body>
 
 </html>
