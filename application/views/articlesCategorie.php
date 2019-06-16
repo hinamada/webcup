@@ -71,7 +71,11 @@
   <!-- /Start your project here-->	
   
 	<!-- Timeline -->
-	<div  class="text-center "><h1 class="titre">Articles</h1></div>
+
+	<?php if(isset($categorie)){ ?>
+	<div  class="text-center "><h1 class="titre"><?php echo $categorie[0]['nom']; ?></h1></div>
+	<?php } ?>
+
 	<div class="row anim" >
 	  <div class="col-md-12">
 		<div class="timeline-main" >
@@ -92,7 +96,7 @@
 					  <!-- Section Description -->
 						<div class="step-content z-depth-1 ml-2 p-4" style=" background-color:white;">	
 												
-							<img id="<?php echo $actualite[$i]['id']; ?>" tabindex="0" onclick="myFunction(this)" class="card-img-top" src="<?php echo url('img/articles/'.$actualite[$i]['urlImage']); ?>" alt="Card image cap">
+							<img style="cursor:pointer;" id="<?php echo $actualite[$i]['id']; ?>" tabindex="0" onclick="myFunction(this)" class="card-img-top" src="<?php echo url('img/articles/'.$actualite[$i]['urlImage']); ?>" alt="Card image cap">
 
 							<h4 class="font-weight-bold"><?php echo $actualite[$i]['titre']; ?></h4>
 							<p class=" mt-4 mb-0"><?php echo $actualite[$i]['contenu']; ?>
