@@ -30,7 +30,10 @@
   <!--Main Navigation-->
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-    <div class="head2">
+      <?php
+      require ('navbar.php')
+      ?>
+    <div class="head2" style="margin-top: 30px">
 
       <div class=" text-center logo">
         <img class="imagelogo" src="<?php echo url('/images/logo.png'); ?>">
@@ -64,10 +67,16 @@
 
     </div>
 
+      <div>
 
+      </div>
   </header>
+</div>
+
   <!--Main Navigation-->
-  <div class="container-fluid">
+
+
+  <div class="container-fluid mt-5">
 
     <div  class="text-center"><h1 id="titre" class="titre"><?php echo $actualite->titre; ?></h1></div>
     <div class="row">
@@ -108,12 +117,13 @@
   <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
   <script src="<?php echo url('js/three.r92.min.js');?>"></script>
   <script>
+  
 function myFunction(){
  responsiveVoice.setDefaultVoice("French Female");
  
 }
 </script>
-
+  <script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
 <script>
 $(document).keydown(
     
@@ -125,6 +135,12 @@ $(document).keydown(
         responsiveVoice.speak($('#titre').text()+'. '+$('#contenu').text()+' '+ text);
       }
     }
+
+// SideNav Button Initialization
+$(".button-collapse").sideNav();
+// SideNav Scrollbar Initialization
+var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+var ps = new PerfectScrollbar(sideNavScrollbar);
 
 );
 </script>
@@ -167,13 +183,15 @@ $(document).keydown(
 
     
   });
-  setTimeout(
-  function() 
-  {
-    responsiveVoice.setDefaultVoice("French Female");
-		responsiveVoice.cancel();
-		responsiveVoice.speak("Vous êtes sur une page d'article. Cliquez sur la touche R pour écouter l'article si vous avez des difficultés à lire.");
-  }, 3000);
+  responsiveVoice.OnVoiceReady = function() {
+			setTimeout(
+		function() 
+		{
+			responsiveVoice.setDefaultVoice("French Female");
+				responsiveVoice.cancel();
+				responsiveVoice.speak("Vous êtes sur une page d'article. Cliquez sur la touche R pour écouter l'article si vous avez des difficultés à lire.");
+		}, 0);
+		};
 });
 </script>
 

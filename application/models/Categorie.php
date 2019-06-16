@@ -14,5 +14,9 @@ class Categorie extends CI_Model
 		$query=$this->db->query('select * from categorie where 1=1 '.$rqt);
 		return $query->result_array();
 	}
+	public function findOne($id){
+		$query=$this->db->query('select * from categorie where id = '.$id);
+		return $query->result_array();
+	}
 
 }
