@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    $array = array("one","two","three","four")
+?>
 
 <head>
 	<meta charset="utf-8">
@@ -84,12 +87,12 @@
 			<?php if(isset($actualite)){ 
 				for($i=0;$i<count($actualite);$i++){
 					if($i%2!=0){?>
-					<li class="timeline-inverted">
+					<li id="annonce_<?php echo $array[$i] ?>" class="timeline-inverted">
 					<?php } else{?>
-					<li>
+					<li id="annonce_<?php echo $array[$i] ?>">
 					<?php } ?>
 			  <!--Section Title -->
-					  <a href="#!" >
+					  <a href="#" >
 						<span class="circle primary-color z-depth-1-half"><i class="fas fa-check" aria-hidden="true"></i></span>
 					  </a>
 						
@@ -173,14 +176,36 @@ responsiveVoice.OnVoiceReady = function() {
 </script>
 <script src="<?php echo url('js/three.r92.min.js');?>"></script>
 <script src="<?php echo url('js/vanta.net.min.js')?>"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 <script>
-VANTA.NET({
-  el: ".anim",
-	color: 0xafafaf,
-  backgroundColor: 0xffffff,
-  points: 6.00,
-  maxDistance: 12.00
-})
+    $(function () {
+        var commands = {
+            'Content *number': upSiteRoller
+        };
+
+        var upSiteRoller = function (number) {
+            console.log(number) ;
+            $('html, body').animate({
+                scrollTop: $("#annonce_"+number).offset().top
+            }, 1000);
+        }
+
+        // Add our commands to annyang
+        annyang.addCommands(commands);
+
+        // Start listening. You can call this here, or attach this call to an event, button, etc.
+        annyang.start();
+    })
+
+</script>
+<script>
+    VANTA.NET({
+      el: ".anim",
+        color: 0xafafaf,
+      backgroundColor: 0xffffff,
+      points: 6.00,
+      maxDistance: 12.00
+    })
 </script>
 <script>
   Mousetrap.bind('backspace', function(e) {

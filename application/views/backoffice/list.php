@@ -90,7 +90,7 @@
     <div class="container-fluid mt-5">
         <div class="row">
             <div class="col-md-3 col-12 offset-md-9">
-                <a role="button" class="btn-black btn">Ajouter article</a>
+                <a role="button" href="<?php echo site_url("Backoffice/saveArticle")?>" class="btn-black btn">Ajouter article</a>
             </div>
         </div>
         <div class="row">
@@ -100,7 +100,6 @@
                     <tr>
                         <th>Titre</th>
                         <th>Date de publication</th>
-                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -110,7 +109,6 @@
                         <tr>
                             <td><?php echo $article->titre ?></td>
                             <td><?php echo $article->datePublication ?></td>
-                            <td><a href="#" role="button" class="btn btn-black">Supprimer</a> </td>
                         </tr>
 
                         <?php
