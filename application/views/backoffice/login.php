@@ -78,7 +78,7 @@
             <p class="h4 mb-4">Login</p>
 
             <!-- Email -->
-            <input type="text" name="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Nom utilisateur">
+            <input type="text" name="username" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Nom utilisateur">
 
             <!-- Password -->
             <input type="password" name="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Mot de passe">
