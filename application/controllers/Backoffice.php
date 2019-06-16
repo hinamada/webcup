@@ -31,8 +31,8 @@ class Backoffice extends CI_Controller {
     }
 
 	public function login(){
-        $this->form_validation->set_rules('email', 'Email', 'required',array(
-            "required"=>"Champs Email requis"
+        $this->form_validation->set_rules('username', 'username', 'required',array(
+            "required"=>"Champs Nom d'utilisateur requis"
         ));
         $this->form_validation->set_rules('password', 'password', 'required',array(
             "required"=>"Champs Mot de passe requis"
@@ -48,11 +48,14 @@ class Backoffice extends CI_Controller {
             $this->load->view("backoffice/login") ;
             return ;
         }else {
-            if($this->verify($this->input->post("username"),$this->input->post("password"))) {
+            var_dump($this->input->post("username"));
+            var_dump($this->input->post("password"));
+
+          /*  if($this->verify($this->input->post("username"),$this->input->post("password"))) {
                redirect("BackOffice/index") ;
             }else{
                 redirect("Backoffice/login?message=Nom d'utilisateur ou mot de passe incorrect") ;
-            }
+            }*/
         }
     }
 
