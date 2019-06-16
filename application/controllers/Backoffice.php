@@ -18,6 +18,7 @@ class Backoffice extends CI_Controller {
 	private function verify ($username,$password){
 	    if($username=="janedoe" && $password=="janedoe") {
             $this->session->set_userdata('user', 'user');
+            return true ; 
         }else {
 	        return false ;
         }
