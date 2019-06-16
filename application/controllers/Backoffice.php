@@ -50,7 +50,7 @@ class Backoffice extends CI_Controller {
             if($this->verify($this->input->post("username"),$this->input->post("password"))) {
                redirect("BackOffice/index") ;
             }else{
-                redirect("BackOffice/login?message=Nom d'utilisateur ou mot de passe incorrect") ;
+                redirect("Backoffice/login?message=Nom d'utilisateur ou mot de passe incorrect") ;
             }
         }
     }
