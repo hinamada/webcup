@@ -187,13 +187,15 @@ var ps = new PerfectScrollbar(sideNavScrollbar);
 
     
   });
-  setTimeout(
-  function() 
-  {
-    responsiveVoice.setDefaultVoice("French Female");
-		responsiveVoice.cancel();
-		responsiveVoice.speak("Vous êtes sur une page d'article. Cliquez sur la touche R pour écouter l'article si vous avez des difficultés à lire.");
-  }, 3000);
+  responsiveVoice.OnVoiceReady = function() {
+			setTimeout(
+		function() 
+		{
+			responsiveVoice.setDefaultVoice("French Female");
+				responsiveVoice.cancel();
+				responsiveVoice.speak("Vous êtes sur une page d'article. Cliquez sur la touche R pour écouter l'article si vous avez des difficultés à lire.");
+		}, 0);
+		};
 });
 </script>
 
