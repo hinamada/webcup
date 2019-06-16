@@ -21,4 +21,8 @@ class Malade_model extends CI_Model
         //$this->db->query($query) ;
         $this->db->insert('malades',$array) ;
     }
+
+
+
+
 }
