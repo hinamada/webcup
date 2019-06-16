@@ -30,7 +30,10 @@
   <!--Main Navigation-->
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-    <div class="head2">
+      <?php
+      require ('navbar.php')
+      ?>
+    <div class="head2" style="margin-top: 30px">
 
       <div class=" text-center logo">
         <img class="imagelogo" src="<?php echo url('/images/logo.png'); ?>">
@@ -64,10 +67,15 @@
 
     </div>
 
+      <div>
 
+      </div>
   </header>
+</div>
+
   <!--Main Navigation-->
-  <div class="container-fluid">
+
+  <div class="container-fluid mt-5">
     <div  class="text-center"><h1 id="titre" class="titre"><?php echo $actualite->titre; ?></h1></div>
     <div class="row">
       <div class="col-md-8">
@@ -117,6 +125,12 @@ $(document).keydown(
         responsiveVoice.speak($('#titre').text()+'. '+$('#contenu').text()+' '+ text);
       }
     }
+
+// SideNav Button Initialization
+$(".button-collapse").sideNav();
+// SideNav Scrollbar Initialization
+var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+var ps = new PerfectScrollbar(sideNavScrollbar);
 
 );
 </script>
