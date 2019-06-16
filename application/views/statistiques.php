@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>WEMANITY | Statistiques </title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -84,7 +84,7 @@
                     <h5 class="card-title">Détails malades</h5>
                     <div class="row text-center">
                         <div class="col-md-6">
-                            <h4>5 800</h4>
+                            <h4>70000</h4>
                             <h5><span class="label red badge">Nouveaux cas <i class="fas fa-arrow-circle-up"></i></span></h5>
                         </div>
                         <div class="col-md-6">
@@ -129,8 +129,7 @@
         data: {
             labels: ["1 à 10", "11 à 20", "21 à 30", "31 à 40", "40 à 50", "60 à 90"],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [430000,470000,400000,500000,300000,500000],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -242,8 +241,24 @@
                 data : [{
                     'hc-key': 'af',
                     drilldown: true,
-                    value: 1
-                }],
+                    value: 200000
+                },{
+                    'hc-key': 'eu',
+                    drilldown: true,
+                    value: 300000},
+                    {'hc-key': 'as',
+                        drilldown: true,
+                        value: 700000},
+                    {'hc-key': 'na',
+                        drilldown: true,
+                        value: 500000},
+                    {'hc-key': 'sa',
+                        drilldown: true,
+                        value: 600000},
+                    {'hc-key': 'oc',
+                        drilldown: true,
+                        value: 400000}
+                    ],
                 mapData: Highcharts.maps['custom/world-continents'],
                 joinBy: 'hc-key',
                 dataLabels: {
