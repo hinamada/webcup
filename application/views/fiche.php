@@ -83,7 +83,7 @@
       <div class="col-md-8">
         <section class="text-center">
             
-			<video class="video-fluid z-depth-1" controls>
+			<video id="video" class="video-fluid z-depth-1" controls>
               
 			  <source src="<?php echo $actualite->urlVideo; ?>" type="video/mp4" />
             </video>
@@ -134,13 +134,11 @@ $(document).keydown(
         responsiveVoice.cancel();
         responsiveVoice.speak($('#titre').text()+'. '+$('#contenu').text()+' '+ text);
       }
+      if (e.keyCode == 80) {      
+        $('#video').get(0).play();
+      }
     }
 
-// SideNav Button Initialization
-$(".button-collapse").sideNav();
-// SideNav Scrollbar Initialization
-var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-var ps = new PerfectScrollbar(sideNavScrollbar);
 
 );
 </script>
@@ -204,6 +202,24 @@ window.location.replace("<?php echo site_url(); ?>");
 });
 
   </script>
+
+<script src="<?php echo url('js/annyang.min.js');?>"></script>
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'hello': function() {
+      alert("me");
+    }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
 </body>
 
 </html>

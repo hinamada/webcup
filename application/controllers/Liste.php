@@ -26,7 +26,6 @@ class Liste extends CI_Controller {
 	}
 	public function index()
 	{
-		
 		$this->load->model('actualite');
 		$this->load->model('categorie');
 		$suite=" and idCategorie='".$this->input->get('idCateg')."'";
