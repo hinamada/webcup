@@ -82,19 +82,15 @@
     <div class="row">
       <div class="col-md-8">
         <section class="text-center">
-            <video class="video-fluid z-depth-1" controls>
-              <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+            
+			<video class="video-fluid z-depth-1" controls>
+              
+			  <source src="<?php echo $actualite->urlVideo; ?>" type="video/mp4" />
             </video>
           </section>
       </div>
 
-      <div class="col-md-6">
-        <section class="my-5">
-          <video class="video-fluid z-depth-1" controls>         
-			<source src="https://­miradomendrika.always­data.net/sante.mp4" />
-		  </video>		  
-        </section>
-      </div>
+      
 	  
 
       <div class="col-md-4">
@@ -121,12 +117,13 @@
   <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
   <script src="<?php echo url('js/three.r92.min.js');?>"></script>
   <script>
+  
 function myFunction(){
  responsiveVoice.setDefaultVoice("French Female");
  
 }
 </script>
-
+  <script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
 <script>
 $(document).keydown(
     

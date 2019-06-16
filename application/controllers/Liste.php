@@ -28,9 +28,10 @@ class Liste extends CI_Controller {
 	{
 		$this->load->model('actualite');
 		$this->load->model('categorie');
-		$data["categorie"]= $this->categorie->findOne($this->input->get('idCateg'));
 		$suite=" and idCategorie='".$this->input->get('idCateg')."'";
 		$data['actualite']=$this->actualite->find($suite);
+		$suiteRequete=" and id='".$this->input->get('idCateg')."'";
+		$data['categorie']=$this->categorie->findById($suiteRequete);
 		$this->load->view('articlesCategorie',$data);
 	}
 }
