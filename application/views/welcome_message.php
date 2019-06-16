@@ -68,44 +68,7 @@
   <div style="height:100vh;">
   <div class="container menu  text-center">
     <div class="row justify-content-md-center">
-<<<<<<< HEAD
-    <a href="<?php echo site_url('Info/statistique')?>" >
-      <div class="col text-center">
-        <img  id="#img" tabindex="0"  class="menuel" src="<?php echo url('/images/glo.png'); ?>">
-        <div class="menu-title">
-        <p>Évolution</p>
-        </div>
-      </div>
-      </a>
-      <a href="#" id="Health">
-      <div class="col text-center"> 
-        <img  tabindex="0"  class="menuel" src="<?php echo url('/images/sante.png'); ?>">
-        <div tabindex="0"  class="menu-title">
-        <p>Santé</p>
-        </div> 
-      </div>
-      </a>
-      <a href="#">
-      <div class="col text-center">
- 
-        <img tabindex="0"  class="menuel" src="<?php echo url('/images/politic.png'); ?>">
-        <div class="menu-title">
-        <p>Politique</p>
-        </div>
-    
-      </div>
-      </a>
-      <a href="#">
-      <div class="col text-center">
-     
-        <img  tabindex="0"  class="menuel" src="<?php echo url('/images/science.png'); ?>">
-        <div class="menu-title">
-        <p>Science</p>
-        </div>
-   
-      </div>
-      </a>
-=======
+
 
 		<a href="<?php echo site_url('Info/statistique') ?>" >
 		  <div class="col text-center">
@@ -126,8 +89,6 @@
 		  </div>
 		</a>
 		<?php }} ?>
-
->>>>>>> 7b79c571f91e3f1dbaf78f9460f1c9903cedd7ef
     </div>
 
   </div>
@@ -157,10 +118,6 @@ VANTA.NET({
   maxDistance: 35.00,
   spacing: 20.00
 })
-</script>
-
-<script>
-
 </script>
 <script>
 function myFunction(){
@@ -199,7 +156,18 @@ $(document).keydown(
     }
 );
 </script>
-
+<script>
+	$(document).ready(function(){
+		setTimeout(
+		function() 
+		{
+			responsiveVoice.setDefaultVoice("French Female");
+				responsiveVoice.cancel();
+				responsiveVoice.speak("Bienvenue sur le site Wemanity. Je suis Hina, l'amie qui va vous aider dans votre navigation. Trouvez les dernières nouvelles de notre monde sur Wemanity quelle que soit vos difficultés.Pour explorer les différentes sections de la page.Utilisez les touches de directions sur votre clavier. Bonne navigation.");
+		}, 1000);
+		
+	});
+</script>
 
 </body>
 
