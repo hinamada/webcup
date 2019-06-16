@@ -138,11 +138,12 @@
       </div>
       <div class="col-md-6">
         <section class="my-5">
-          <video class="video-fluid z-depth-1" controls>
-            <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
-          </video>
+          <video class="video-fluid z-depth-1" controls>         
+			<source src="https://­miradomendrika.always­data.net/sante.mp4" />
+		  </video>		  
         </section>
       </div>
+	  
     </div>
     
   </div>
