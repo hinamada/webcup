@@ -94,7 +94,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Nouvelle article</h5>
                         <?php echo validation_errors(); ?>
-                        <?php echo form_open_multipart('BackOffice/saveArticle');?>
+                        <?php echo form_open_multipart('Backoffice/saveArticle');?>
                             <!-- Material input -->
                             <div class="form-group">
                                 <!-- Default input -->
