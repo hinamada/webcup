@@ -52,11 +52,11 @@ class Backoffice extends CI_Controller {
             //var_dump($this->input->post("password"));
             $value = $this->verify($this->input->post("username"),$this->input->post("password")) ;
             var_dump($value);
-            /*if($value) {
-               redirect("BackOffice/index") ;
+            if($value) {
+               redirect("Backoffice/index") ;
             }else{
                 redirect("Backoffice/login?message=Nom d'utilisateur ou mot de passe incorrect") ;
-            }*/
+            }
         }
     }
 
