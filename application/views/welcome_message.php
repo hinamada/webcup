@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Wemanity | Accueil</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -99,6 +99,21 @@
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="<?php echo url('js/jquery-3.3.1.min.js'); ?>"></script>
+  <script>
+	$(document).ready(function(){
+		responsiveVoice.OnVoiceReady = function() {
+			setTimeout(
+		function() 
+		{
+			responsiveVoice.setDefaultVoice("French Female");
+				responsiveVoice.cancel();
+				responsiveVoice.speak("Bienvenue sur le site Wemanity. Je suis Hina, l'amie qui va vous aider dans votre navigation. Trouvez les dernières nouvelles de notre monde sur Wemanity quelle que soit vos difficultés.Pour explorer les différentes sections de la page.Utilisez les touches de directions sur votre clavier. Bonne navigation.");
+		}, 0);
+		};
+		
+		
+	});
+</script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="<?php echo url('js/popper.min.js'); ?>"></script>
   <!-- Bootstrap core JavaScript -->
@@ -156,18 +171,7 @@ $(document).keydown(
     }
 );
 </script>
-<script>
-	$(document).ready(function(){
-		setTimeout(
-		function() 
-		{
-			responsiveVoice.setDefaultVoice("French Female");
-				responsiveVoice.cancel();
-				responsiveVoice.speak("Bienvenue sur le site Wemanity. Je suis Hina, l'amie qui va vous aider dans votre navigation. Trouvez les dernières nouvelles de notre monde sur Wemanity quelle que soit vos difficultés.Pour explorer les différentes sections de la page.Utilisez les touches de directions sur votre clavier. Bonne navigation.");
-		}, 1000);
-		
-	});
-</script>
+
 
 </body>
 

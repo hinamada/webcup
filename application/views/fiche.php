@@ -121,12 +121,13 @@
   <script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
   <script src="<?php echo url('js/three.r92.min.js');?>"></script>
   <script>
+  
 function myFunction(){
  responsiveVoice.setDefaultVoice("French Female");
  
 }
 </script>
-
+  <script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
 <script>
 $(document).keydown(
     
@@ -186,13 +187,15 @@ var ps = new PerfectScrollbar(sideNavScrollbar);
 
     
   });
-  setTimeout(
-  function() 
-  {
-    responsiveVoice.setDefaultVoice("French Female");
-		responsiveVoice.cancel();
-		responsiveVoice.speak("Vous êtes sur une page d'article. Cliquez sur la touche R pour écouter l'article si vous avez des difficultés à lire.");
-  }, 3000);
+  responsiveVoice.OnVoiceReady = function() {
+			setTimeout(
+		function() 
+		{
+			responsiveVoice.setDefaultVoice("French Female");
+				responsiveVoice.cancel();
+				responsiveVoice.speak("Vous êtes sur une page d'article. Cliquez sur la touche R pour écouter l'article si vous avez des difficultés à lire.");
+		}, 0);
+		};
 });
 </script>
 

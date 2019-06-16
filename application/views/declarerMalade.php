@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Wemanity | Je suis malade</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -20,44 +20,49 @@
 
 <!-- Start your project here-->
 <!--Main Navigation-->
-<header>
+<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Opinions</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
+      <?php
+      require ('navbar.php')
+      ?>
+    <div class="head2" style="margin-top: 30px">
+
+      <div class=" text-center logo">
+        <img class="imagelogo" src="<?php echo url('/images/logo.png'); ?>">
+      </div>
+      <div class="toggle-button d-inline-block d-lg-none">
+        <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
+      </div>
+      <div id="clockdiv2">
+
+          <div>
+            <span class="days"></span>
+            <div class="smalltext">Jours</div>
+          </div>
+
+          <div>
+            <span class="hours"></span>
+            <div class="smalltext">Heures</div>
+          </div>
+
+          <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+
+          <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Secondes</div>
+          </div>
+
         </div>
-    </nav>
 
-</header>
+    </div>
+
+      <div>
+
+      </div>
+  </header>
 <!--Main Navigation-->
 <div class="container-fluid mt-5">
     <div class="row">
@@ -117,6 +122,7 @@
         navigator.geolocation.getCurrentPosition(maPosition);
     }
 </script>
+  <script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
 </body>
 
 </html>
