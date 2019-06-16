@@ -73,7 +73,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Répartition par âge des malades</h5>
+                    <h5 id="malades" class="card-title">Répartition par âge des malades</h5>
                     <canvas id="myChart" style="max-width: 500px;"></canvas>
                 </div>
             </div>
@@ -84,12 +84,12 @@
                     <h5 class="card-title">Détails malades</h5>
                     <div class="row text-center">
                         <div class="col-md-6">
-                            <h4>70000</h4>
-                            <h5><span class="label red badge">Nouveaux cas <i class="fas fa-arrow-circle-up"></i></span></h5>
+                            <h4 id="nbnew">70000</h4>
+                            <h5><span id="newcase" class="label red badge">Nouveaux cas <i class="fas fa-arrow-circle-up"></i></span></h5>
                         </div>
                         <div class="col-md-6">
-                            <h4>5%</h4>
-                            <h5><span class="label red badge">Pris en charge <i class="fas fa-arrow-circle-up"></i></span></h5>
+                            <h4 id="nbpris">5%</h4>
+                            <h5><span id="charge" class="label red badge">Pris en charge <i class="fas fa-arrow-circle-up"></i></span></h5>
                         </div>
                     </div>
                 </div>
@@ -274,22 +274,34 @@
   <script>
 function read(){
  responsiveVoice.setDefaultVoice("French Female");
- 
+ var text = "Cliquez sur entrer pour lire les informations";
+      responsiveVoice.speak(text);
 }
 </script>
 <script>
-  Mousetrap.bind('enter', function(e) {
-    responsiveVoice.speak($('h1').text());
-    responsiveVoice.cancel();
-    responsiveVoice.speak($('h5').text());
-    responsiveVoice.cancel();
-    responsiveVoice.speak($('h4').text());
-});
+  
 Mousetrap.bind('escape', function(e) {
 window.location.replace("https://hinawebcup.herokuapp.com/");
 });
 
   </script>
+  <script>
+$(document).keydown(
+    
+    function(e)
+    {    
+
+      if (e.keyCode == 13) {  
+   
+    responsiveVoice.cancel();
+    responsiveVoice.speak($('#titre').text()+'. '+$('#newcase').text()+' .'+$('#nbnew').text()+' .'+$('#charge').text()+' .'+$('#nbpris').text());
+
+      }
+    }
+
+
+);
+</script>
 </body>
 
 </html>
