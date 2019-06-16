@@ -87,10 +87,21 @@
             </video>
           </section>
       </div>
+
+      <div class="col-md-6">
+        <section class="my-5">
+          <video class="video-fluid z-depth-1" controls>         
+			<source src="https://­miradomendrika.always­data.net/sante.mp4" />
+		  </video>		  
+        </section>
+      </div>
+	  
+
       <div class="col-md-4">
       <p tabindex="0" id="contenu"><?php echo $actualite->contenu; ?></p>
       </div>
       
+
     </div>
     
     

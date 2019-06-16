@@ -127,7 +127,7 @@
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            labels: ["1 à 10", "11 à 20", "21 à 30", "31 à 40", "40 à 50", "60 à 90"],
             datasets: [{
                 label: '# of Votes',
                 data: [12, 19, 3, 5, 2, 3],
@@ -221,7 +221,7 @@
                                     symbol: 'circle'
                                 },
                                 data: [
-                                    pointWithLatLon({ name: 'Paris' }, { lat: 48.8567, lon: 2.3508}),
+                                    pointWithLatLon({ na,me: 'Paris' }, { lat: 48.8567, lon: 2.3508}),
                                     pointWithLatLon({ name: 'Bucharest' }, { lat: 44.4325, lon: 26.103889}),
                                     pointWithLatLon({ name: 'Riga' }, { lat: 56.948889, lon: 24.106389})
                                 ]
