@@ -11,7 +11,7 @@ class Backoffice extends CI_Controller {
 
 	private function check() {
 	    if(!$this->session->has_userdata('user')) {
-	        redirect('BackOffice/login') ;
+	        redirect('Backoffice/login') ;
         }
     }
 
@@ -48,10 +48,11 @@ class Backoffice extends CI_Controller {
             $this->load->view("backoffice/login") ;
             return ;
         }else {
-            var_dump($this->input->post("username"));
-            var_dump($this->input->post("password"));
-
-          /*  if($this->verify($this->input->post("username"),$this->input->post("password"))) {
+            //var_dump($this->input->post("username"));
+            //var_dump($this->input->post("password"));
+            $value = $this->verify($this->input->post("username"),$this->input->post("password")) ;
+            var_dump($value);
+            /*if($value) {
                redirect("BackOffice/index") ;
             }else{
                 redirect("Backoffice/login?message=Nom d'utilisateur ou mot de passe incorrect") ;
