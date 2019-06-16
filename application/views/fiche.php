@@ -254,6 +254,7 @@ $(document).keydown(
   Mousetrap.bind('backspace', function(e) {
 window.location.replace("http://localhost/HINA/webcup/");
 });
+
   </script>
 =======
   
