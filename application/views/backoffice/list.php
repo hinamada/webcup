@@ -105,10 +105,11 @@
                     <tbody>
                     <?php
                     foreach ($articles as $article) {
+                        $date = new \DateTime($article->datePublication) ;
                         ?>
                         <tr>
                             <td><?php echo $article->titre ?></td>
-                            <td><?php echo $article->datePublication ?></td>
+                            <td><?php echo $date->format("d-m-Y") ?></td>
                         </tr>
 
                         <?php
