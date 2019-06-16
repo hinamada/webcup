@@ -5,6 +5,11 @@
     src: url(/assets/font/Ailerons-Typeface.otf);
   }
 
+  @font-face {
+    font-family: ailerons;
+    src: url(/assets/font/Ailerons-Typeface.otf);
+  }
+
   .imagelogo 
 {
     height: auto;
