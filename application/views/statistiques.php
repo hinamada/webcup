@@ -22,55 +22,58 @@
 
 </head>
 
-<body>
+<body onload="read()">
 
 <!-- Start your project here-->
 <!--Main Navigation-->
-<header>
+<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    <?php
+    require ('navbar.php')
+    ?>
+<div class="head2">
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Opinions</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <div class=" text-center logo">
+    <img class="imagelogo" src="<?php echo url('/images/logo.png'); ?>">
+  </div>
+  <div class="toggle-button d-inline-block d-lg-none">
+    <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
+  </div>
+  <div id="clockdiv2">
+
+      <div>
+        <span class="days"></span>
+        <div class="smalltext">Jours</div>
+      </div>
+
+      <div>
+        <span class="hours"></span>
+        <div class="smalltext">Heures</div>
+      </div>
+
+      <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+
+      <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Secondes</div>
+      </div>
+
+    </div>
+
+</div>
+
 
 </header>
 <!--Main Navigation-->
 <div class="container-fluid mt-5">
-    <div class="row ">
+<div  class="text-center"><h1 id="titre" class="titre">Évolution de l'épidémie Intelectron</h1></div>
+    <div class="row graphs ">
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Répartition par age des malades</h5>
+                    <h5 class="card-title">Répartition par âge des malades</h5>
                     <canvas id="myChart" style="max-width: 500px;"></canvas>
                 </div>
             </div>
@@ -93,7 +96,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row graphs">
         <div id="map" style="width:100%; height:400px;"></div>
     </div>
 </div>
@@ -108,15 +111,16 @@
 <script type="text/javascript" src="<?php echo url('js/bootstrap.min.js'); ?>"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="<?php echo url('js/mdb.min.js'); ?>"></script>
-
+ 
+<script type="text/javascript" src="<?php echo url('js/clock.js'); ?>"></script>
 <script src="<?php echo url('js/mapdata/highmaps.js'); ?>"></script>
 <script src="<?php echo url('js/mapdata/exporting.js'); ?>"></script>
 <script src="<?php echo url('js/mapdata/drilldown.js'); ?>"></script>
 <script src="<?php echo url('js/mapdata/world-continents.js'); ?>"></script>
 <script src="<?php echo url('js/mapdata/europe.js'); ?>"></script>
 <script src="<?php echo url('js/mapdata/africa.js'); ?>"></script>
-
-
+<script src="//code.responsivevoice.org/responsivevoice.js?key=1pDkkaGO"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
 
 <script>
     var ctx = document.getElementById("myChart").getContext('2d');
@@ -252,6 +256,25 @@
 
 
 </script>
+  <script>
+function read(){
+ responsiveVoice.setDefaultVoice("French Female");
+ 
+}
+</script>
+<script>
+  Mousetrap.bind('enter', function(e) {
+    responsiveVoice.speak($('h1').text());
+    responsiveVoice.cancel();
+    responsiveVoice.speak($('h5').text());
+    responsiveVoice.cancel();
+    responsiveVoice.speak($('h4').text());
+});
+Mousetrap.bind('escape', function(e) {
+window.location.replace("https://hinawebcup.herokuapp.com/");
+});
+
+  </script>
 </body>
 
 </html>

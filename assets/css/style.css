@@ -14,7 +14,9 @@
     margin-top: 5vh;
 }
 
-
+.graphs{
+    margin-top: 10vh;
+}
 .menuel { transition: all .2s ease-in-out; }
 .menuel
 {
