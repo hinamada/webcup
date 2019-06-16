@@ -70,7 +70,7 @@
         <div class="row">
         <div class="col-12 col-md-6 offset-md-3"
         <!-- Default form login -->
-        <form class="text-center border border-light p-5" method="post" action="<?php echo site_url("BackOffice/login")?>">
+        <form class="text-center border border-light p-5" method="post" action="<?php echo site_url("Backoffice/login")?>">
                                     <?php echo validation_errors(); ?>
             <?php if(isset($message)) {?>
                 <p><?php echo $message ?></p>
